@@ -1,0 +1,37 @@
+body {
+	background: #333;
+	margin: 0;
+}
+.main {
+	width: 100%;
+	margin-top: 30px;
+	position: relative;
+	background-color: #4ab151;
+	background: url("img/wave.png") repeat, linear-gradient(top, #4ab151, #297022);
+}
+.main:before {
+	top: -2px;
+	width: 100%;
+	height: 2px;
+	content: ".";
+	display: block;
+	position: relative;
+	text-indent: -999em;
+	background: url("img/fringe.png") repeat-x;
+}
+.main:after {
+	width: 100%;
+	height: 2px;
+	bottom: -2px;
+	content: ".";
+	display: block;
+	position: relative;
+	text-indent: -999em;
+	background: url("img/fringei.png") repeat-x;
+}
+.main h1 {
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 50px auto;
+}

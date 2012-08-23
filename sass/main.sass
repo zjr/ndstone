@@ -1,0 +1,268 @@
+@import fonts
+
+body
+	margin: 0
+	background: #111
+	overflow-x: hidden
+
+.clearfix:after,
+.clearfix:before
+	content: ""
+	display: table
+.clearfix:after 
+	clear: both
+.clearfix 
+	*zoom: 1
+
+a.linkset
+	color: #eee
+	float: left
+	display: block
+	text-align: center
+	text-decoration: none 
+	font-family: $EdmondB,Helvetica,Arial,sans-serif
+	&:hover
+		color: #eee
+	&:active
+		color: #eee
+	&:focus
+		color: #eee
+
+header
+	width: 100%	
+	height: 300px
+	background-color: #307030
+	background: url("/images/map.png") no-repeat center center, linear-gradient(top, #307030, #200520)
+	nav
+		width: 75%
+		margin: auto
+		padding-top: 15px
+	a.linkset
+		width: 16%
+		font-size: 18px
+		padding-top: 1px
+		line-height: 25px
+		border-radius: 10px
+		text-transform: uppercase
+		text-shadow: 0 0 3px #333
+		transition: background-color 0.1s ease-in-out
+		& + a
+			margin-left: 5%
+		&:hover
+			background-color: rgba(204,204,204,0.3)
+	.logo
+		width: 115px
+		height: 115px
+		display: block
+		margin: -92px auto 40px
+		position: relative
+	.eye
+		width: 121px
+		height: 121px
+		top: 26px
+		border-radius: 66px 0 66px 0
+		background: white
+		transition: all 2s ease-in-out
+		transform: rotate(405deg)
+		position: relative
+		margin: auto
+		display: block
+	h2
+		width: 90%
+		color: #ccc
+		margin: 0 auto
+		font-size: 42px
+		line-height: 32px
+		padding-left: 8px
+		text-align: center
+		letter-spacing: 8px
+		font-weight: normal
+		font-family: $Tommaso,Helvetica,Arial,sans-serif
+		text-shadow: 0 0 10px #000, 0 0 7px #000, 0 0 5px #000, 0 0 3px #000
+
+.main
+	width: 100%
+	position: relative
+	background-color: #4ab151
+	box-shadow: 0 -3px 10px 0px #000
+	background: url("/images/wave.png") repeat, linear-gradient(top, #4ab151, #297022)
+
+	&:before
+		top: -2px
+		width: 100%
+		height: 2px
+		content: "."
+		display: block
+		position: relative
+		text-indent: -999em
+		background: url("/images/fringe.png") repeat-x
+
+	&:after
+		width: 100%
+		height: 2px
+		bottom: -2px
+		content: "."
+		display: block
+		position: relative
+		text-indent: -999em
+		background: url("/images/fringei.png") repeat-x
+
+	h1
+		color: #eee
+		width: 220px
+		display: block
+		font-size: 42px
+		margin: 35px auto
+		text-align: center
+		font-weight: normal
+		text-shadow: 0px -1px 2px #333, 0px 0px 2px #fff
+		font-family: $EdmondB,Helvetica,Arial,sans-serif
+
+.tabcondom
+	width: 650px
+	height: 45px
+	margin: auto
+	a.linkset
+		width: 180px
+		margin-top: 0
+		font-size: 24px
+		margin-bottom: 0
+		line-height: 54px
+		padding-bottom: 10px
+		font-weight: normal
+		transition: all 0.3s ease-in-out
+		text-shadow: 0px -1px 2px #333, 0px 0px 2px #fff
+		font-family: $EdmondB,Helvetica,Arial,sans-serif
+		& + a
+			margin-left: 55px
+		&:hover
+			color: #fff
+			text-shadow: 0px -1px 2px #333, 0px 0px 2px #fff, 0 0 3px rgba(170,0,170,0.5), 0 0 11px rgba(170,0,170,0.7)
+.hand
+	top: 9px
+	width: 490px
+	margin: auto
+	position: relative
+	pointer-events: none
+.scalpel
+	top: 1px
+	z-index: 1
+	width: 20px
+	height: 20px
+	perspective: 1000
+	position: absolute
+	background-color: #eee
+	transform: rotate(36045deg)
+	backface-visibility: hidden
+	border-radius: 11px 0 11px 0
+	transition: left 0.7s ease-in-out, box-shadow 0.7s ease-in-out, transform 999s linear
+	&.left
+		left: 0%
+		perspective: 1000
+		backface-visibility: hidden
+		box-shadow: 0 0 13px 0px #f00
+	&.center
+		left: 50%
+		perspective: 1000
+		margin-left: -10px
+		backface-visibility: hidden
+		box-shadow: 0 0 13px 0px #f0f
+	&.right
+		left: 100%
+		perspective: 1000
+		margin-left: -20px
+		backface-visibility: hidden
+		box-shadow: 0 0 13px 0px #00f
+.skin
+	width: 100%
+	height: auto
+	overflow-x: hidden 
+.guts
+	height: 2px
+	width: 300%
+	overflow: hidden
+	perspective: 1000
+	background-color: #333
+	backface-visibility: hidden
+	transform: translate(-33.333333%,0)
+	box-shadow: inset 0 0 25px 3px #000
+	transition: transform 0.7s ease, height 0.7s ease
+	&.open
+		height: 350px
+	&.left
+		perspective: 1000
+		backface-visibility: hidden
+		transform: translate(0,0)
+	&.right
+		perspective: 1000
+		backface-visibility: hidden
+		transform: translate(-66.666666%,0)
+	&:before
+		width: 100%
+		height: 1px
+		content: ""
+		background: #eee
+		position: absolute
+		box-shadow: 0 0 7px 0px #000
+	&:after
+		width: 100%
+		height: 1px
+		bottom: 0px
+		content: ""
+		background: #eee
+		position: absolute
+		box-shadow: 0 0 7px 0px #000
+.organ
+	float: left
+	width: 33.333333%
+	position: relative
+	img
+		display: block
+		margin: 25px auto
+		height: auto
+	h3
+		font-family: $EdmondB,Helvetica,Arial,sans-serif
+		text-align: center
+		color: #eee
+.dBtn
+	border: 0
+	margin: 0
+	width: 25%
+	padding: 0
+	z-index: 1
+	opacity: 1
+	color: #222
+	font-size: 120px
+	background: none
+	line-height: 350px
+	transition: opacity 0.7s ease
+	text-shadow: 0 -1px 0 #000, 0 1px 0 #444
+	font-family: $EdmondB,Helvetica,Arial,sans-serif
+	&.prev
+		float: left
+		text-align: right
+		padding-right: 5%
+	&.next
+		float: left
+		text-align: left
+		padding-left: 5%
+	&.hid
+		opacity: 0
+		pointer-events: none
+.membrane
+	width: 50%
+	float: left
+	overflow: hidden
+.tissue
+	float: left
+	position: relative
+	transition: left 0.5s ease
+.cell
+	float: left
+	h3
+		font-family: $EdmondB,Helvetica,Arial,sans-serif
+		color: #222
+		line-height: 350px
+		margin: 0
+		font-size: 85px
+		text-shadow: 0 -1px 0 #000, 0 1px 0 #444

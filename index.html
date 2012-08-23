@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Grindstone Productions Llc.</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+</head>
+<body>
+	<header>
+		<nav class="clearfix">
+			<a class="linkset" href="/">Home</a>
+			<a class="linkset" href="/contact">Contact</a>
+			<a class="linkset" href="/work">Work</a>
+			<a class="linkset" href="/team">Team</a>
+			<a class="linkset" href="/about">About</a>
+		</nav>
+		<div class="eye"></div>
+		<img class="logo" src="/images/headLogo.png" width="150" height="150" alt="Grindstone Productions LLC.">
+		<h2 class="respHmed">Grindstone Productions Llc.</h2>
+	</header>
+	<div class="main">
+		<h1>Makin' stuff good.</h1>
+		<div class="tabcondom">
+			<a class="linkset" href="#down" onClick="openGuts('#left')">Clients</a>
+			<a class="linkset" href="#down" onClick="openGuts('#center')">Services</a>
+			<a class="linkset" href="#down" onClick="openGuts('#right')">Events</a>
+		</div>
+		<div class="hand"><div class="scalpel center"></div></div>
+		<div class="skin">	
+			<div class="guts clearfix">
+				<div class="organ" id="left">
+					<button class="prev dBtn tis0 respHbigger" onClick="tissue0('prev')">&laquo;</button>
+					<div class="membrane">
+						<div class="tissue">
+							<div class="cell">
+								<h3 class="respHsmaller">Coming Soon!</h3>
+							</div>
+						</div>
+					</div>
+					<button class="next dBtn tis0 respHbigger" onClick="tissue0('next')">&raquo;</button>
+				</div>
+				<div class="organ" id="center">
+					<button class="prev dBtn tis1 respHbigger" onClick="tissue1('prev')">&laquo;</button>
+					<div class="membrane">
+						<div class="tissue">
+							<div class="cell">
+								<h3 class="respHsmaller">Coming Soon!</h3>
+							</div>
+							<div class="cell">
+								<img src="//placekitten.com/550/300">
+							</div>
+						</div>
+					</div>
+					<button class="next dBtn tis1 respHbigger" onClick="tissue1('next')">&raquo;</button>
+				</div>
+				<div class="organ" id="right">
+					<button class="prev dBtn tis2 respHbigger" onClick="tissue2('prev')">&laquo;</button>
+					<div class="membrane">	
+						<div class="tissue">
+							<div class="cell">
+								<h3 class="respHsmaller">Coming Soon!</h3>
+							</div>
+						</div>
+					</div>
+					<button class="next dBtn tis2 respHbigger" onClick="tissue2('next')">&raquo;</button>
+				</div>
+			</div>
+		</div>
+		<div id="down">&nbsp;</div>	
+	</div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascript/lib/jquery-1.7.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="/javascript/main.js"></script>
+<script>
+  $(".respHsmaller").fitText(0.7);
+  $(".respHbigger").fitText(0.2);
+  $(".respHmed").fitText(2.3);
+  $(".linkset").fitText(0.7)
+</script>
+</html>
